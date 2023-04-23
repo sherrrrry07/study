@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册新用户</title>
+    <style>
+    .firstTime{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		/* 登录框样式 */
+		.signup {
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px #ccc;
+            position: relative;
+		}
+        .signuptitle {
+			position: absolute;
+            top: -25px; /* 留出一定的空隙 */
+            left: 50%; /* 水平居中 */
+            transform: translateX(-50%); /* 水平居中 */
+		}
+
+    </style>
+</head>
+
+<body>
+    <h2>Proceed</h2>
+    <div class="firstTime">
+        <form class="signup">
+            <div><h1 id="signuptitle">注册</h1></div>
+            <p><label for="username" id="username"></label><input type="text" name="username" placeholder="请输入用户名"></p>
+            <p><label for="password" id="password"></label><input type="password" name="password" placeholder="请输入密码"></p>
+            <button id="button" type="button">注册</button>
+        </form>
+    </div>
+</body>
+</html>
